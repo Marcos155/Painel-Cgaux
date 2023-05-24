@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
     <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
@@ -38,11 +38,16 @@
         }
 
         .box {
-            height: 10vw;
-            width: 17vw;
+            height: 32%;
+            width: 100%;
             background-color: #fff;
             box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
             border-radius: 19px;
+        }
+
+        .i {
+            flex-direction: column;
+            width: 17.3%;
         }
 
         @keyframes load {
@@ -182,6 +187,50 @@
                 color: #fabf03;
             }
         }
+
+        @media only screen and (max-width: 768px) {
+            .responsive {
+                display: block;
+                width: 100%;
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .iframe {
+                width: 100%;
+                height: 275px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .a {
+                width: 70%;
+                height: 50vw;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 10%;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .margin  {
+                margin-top: 25%;
+            }
+        }
+
+        .r {
+            width: 100%;
+        }
+
+        .j {
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 19px;
+            width: 100%;
+        }
     </style>
     <script>
         function loading() {
@@ -264,92 +313,98 @@
         </div>
         <!-- FIM CAROUSEL -->
         <!-- INICO CAROUSEL DE INFORMAÇÕES-->
-        <section class="game-section">
-            <h2 class="line-title">Atualizaçõs gerais</h2>
-            <div class="owl-carousel custom-carousel owl-theme">
-                <div class="item active" style="background-image: url(img/Cursos.jpg);">
-                    <div class="item-desc">
-                        <h3>Cursos obrigatorios</h3>
-                        <p>Segue a lista de curos obrigatorios disponivel no portal da Enap</p>
+        <div style="display: block">
+            <section class="game-section">
+                <h2 class="line-title">Atualizaçõs gerais</h2>
+                <div class="owl-carousel custom-carousel owl-theme">
+                    <div class="item active" style="background-image: url(img/Cursos.jpg);">
+                        <div class="item-desc">
+                            <h3>Cursos obrigatorios</h3>
+                            <p>Segue a lista de curos obrigatorios disponivel no portal da Enap</p>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./img/Bandeira.jpg);">
+                        <div class="item-desc">
+                            <h3>7 de Setembro</h3>
+                            <p>Dia da independência do Brasil
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(https://www.gov.br/transferegov/pt-br/capacitacao/transferegov/ead/transferencias-visao-geral.png/@@images/image);">
+                        <div class="item-desc">
+                            <h3>Atualizaçõs do painel</h3>
+                            <p>Essa semana o painel foi atualizado dia tal e tal, levando em conta a data de pagamento
+                                tal e
+                                tal </p>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(https://img.freepik.com/vetores-premium/personagem-de-desenho-animado-grafico-vetorial-de-ilustracao-de-negocios-de-trabalho-em-equipe_516790-1331.jpg?w=2000);">
+                        <div class="item-desc">
+                            <h3>Desempenho CGAUX</h3>
+                            <p>Neste mês a cgaux e suas cordenações pagou tanto disso e tanto daquilo outro</p>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(https://tangerino.com.br/blog/wp-content/uploads/2020/10/gamificacao-para-a-motivacao-pessoal-e-da-equipe-1.jpg);">
+                        <div class="item-desc">
+                            <h3>Equipe Cgaux</h3>
+                            <p>Equipe "motivada", e trabalhando para cumprir com os objetivos da autarquia kk</p>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(https://thumbs.dreamstime.com/b/not%C3%ADcias-34802664.jpg);">
+                        <div class="item-desc">
+                            <h3>Noticias FNDE</h3>
+                            <p>O fnde realizou tal ação nesse mês em tal lugar, mais Informações em: "link"</p>
+                        </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./img/Bandeira.jpg);">
-                    <div class="item-desc">
-                        <h3>7 de Setembro</h3>
-                        <p>Dia da independência do Brasil
-                        </p>
-                    </div>
-                </div>
-                <div class="item"
-                    style="background-image: url(https://www.gov.br/transferegov/pt-br/capacitacao/transferegov/ead/transferencias-visao-geral.png/@@images/image);">
-                    <div class="item-desc">
-                        <h3>Atualizaçõs do painel</h3>
-                        <p>Essa semana o painel foi atualizado dia tal e tal, levando em conta a data de pagamento tal e
-                            tal </p>
-                    </div>
-                </div>
-                <div class="item"
-                    style="background-image: url(https://img.freepik.com/vetores-premium/personagem-de-desenho-animado-grafico-vetorial-de-ilustracao-de-negocios-de-trabalho-em-equipe_516790-1331.jpg?w=2000);">
-                    <div class="item-desc">
-                        <h3>Desempenho CGAUX</h3>
-                        <p>Neste mês a cgaux e suas cordenações pagou tanto disso e tanto daquilo outro</p>
-                    </div>
-                </div>
-                <div class="item"
-                    style="background-image: url(https://tangerino.com.br/blog/wp-content/uploads/2020/10/gamificacao-para-a-motivacao-pessoal-e-da-equipe-1.jpg);">
-                    <div class="item-desc">
-                        <h3>Equipe Cgaux</h3>
-                        <p>Equipe "motivada", e trabalhando para cumprir com os objetivos da autarquia kk</p>
-                    </div>
-                </div>
-                <div class="item"
-                    style="background-image: url(https://thumbs.dreamstime.com/b/not%C3%ADcias-34802664.jpg);">
-                    <div class="item-desc">
-                        <h3>Noticias FNDE</h3>
-                        <p>O fnde realizou tal ação nesse mês em tal lugar, mais Informações em: "link"</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <br><br>
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="js.js"></script>
         </h1>
-        <div style="display: flex; justify-content: space-evenly; border-radius: 19px;">
-            <iframe title="Relatório Financeiro 2023" width="1500" height="600"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNGJiOTZmN2UtNjQ0My00YWIxLWFlMmUtZmE3YWYxMmZlM2QwIiwidCI6ImNmODQ1NGQzLWUwMTItNGE5ZC05NWIzLTcwYmRiNmY0NTlkNSJ9"
-                frameborder="0" allowFullScreen="true"></iframe>
-            <div style="flex-direction: column; justify-content:space-around">
-                <div class="box">
-                    <div style="width: 100%;">
-                        <i class="fas fa-hand-holding-usd fa-2xl" style="color: #0a2eba; left: 50%;
+        <div class="responsive r">
+            <div class="j responsive">
+                <iframe class="iframe" title="Relatório Financeiro 2023" width="1500" height="600"
+                    src="https://app.powerbi.com/reportEmbed?reportId=4f42142f-a590-4b8d-a59d-300c3ef16548&autoAuth=true&ctid=cf8454d3-e012-4a9d-95b3-70bdb6f459d5"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                <div class="responsive margin i ">
+                    <div class="box a">
+                        <div style="width: 100%; height: 30%; background-color: #0a2eba;">
+                            <i class="fas fa-hand-holding-usd fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
+                        </div>
+                        <h3 class="center top">São Paulo, Minas e tal representam 60% do total<br> dos saldos</h3>
                     </div>
-                    <h3 class="center top">São Paulo, Minas e tal representam 60% do total dos saldos</h3>
-                </div>
-                <div class="box" style="margin-top: 4%; margin-bottom: 4%;">
-                    <div style="width: 100%;">
-                        <i class="fa-sharp fa-solid fa-circle-check fa-2xl" style="color: #008a3c; left: 50%;
+                    <div class="box a" style="margin-top: 4%; margin-bottom: 4%;">
+                        <div style="width: 100%; height: 30%; background-color: #008a3c;">
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
+                        </div>
+                        <h3 class="center top">O painel é atualizado toda semana pontualmente na quinta-feira</h3>
                     </div>
-                    <h3 class="center top">O painel é atualizado toda semana pontualmente na quinta-feira</h3>
-                </div>
-                <div class="box">
-                    <div style="width: 100%;">
-                        <i class="fas fa-user-check fa-2xl" style="color: #FBBF03; left: 50%;
+                    <div class="box a">
+                        <div style="width: 100%; height: 30%; background-color: #fabf03;">
+                            <i class="fas fa-user-check fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
+                        </div>
+                        <h3 class="center top">Dê seu feedback, sobre o painel e o site no link abaixo</h3>
                     </div>
-                    <h3 class="center top">Dê seu feedback, sobre o painel e o site no link abaixo</h3>
                 </div>
             </div>
         </div>
     </div>
+
     <br><br><br><br>
     <!-- <img src="img/barra cgaux.jpg" height="120" width="1900" alt=""> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
+    <!-- <script>
         const ctx = document.getElementById('state');
 
         new Chart(ctx, {
@@ -379,7 +434,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
