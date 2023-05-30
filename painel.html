@@ -43,8 +43,15 @@
             background-color: #fff;
             box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
             border-radius: 19px;
+            transition: transform .2s; /* Animation */
         }
 
+        .box:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        .load-wrapp:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
         .i {
             flex-direction: column;
             width: 17.3%;
@@ -73,6 +80,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1;
+
         }
 
         .content {
@@ -87,6 +95,7 @@
             border-radius: 5px;
             text-align: center;
             /* background-image: linear-gradient(#cad4ec, #56a65b); */
+            transition: transform .2s; /* Animation */
         }
 
         /* 
@@ -416,6 +425,10 @@
                     </div>
                 </div>
             </div>
+        </div><br>
+        <div class="img">
+            <img src="img/1.png" width="200" height="100" style="margin-left: 3vw;">
+            <img src="img/2.png" width="115" height="100" style="margin-left: 5vw;">
         </div>
         <br>
         <br>
@@ -425,7 +438,8 @@
         <!-- <div class="pai"> -->
         <div style="background-color: #008a3c;height: 4.4vw;text-align: center;top: 5vw;position: relative;">
             <i class="fas fa-chart-line fa-lg" style="color: white; position: relative; top: 2vw;"></i>
-            <p style="color: white;position: relative; top: 2vw; display: inline-block;">© 2023 CGAUX - Coordenação Geral de bolsas Auxílios</p>
+            <p style="color: white;position: relative; top: 2vw; display: inline-block;">© 2023 CGAUX - Coordenação
+                Geral de bolsas Auxílios</p>
         </div>
 
     </div>
