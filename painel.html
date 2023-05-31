@@ -43,15 +43,20 @@
             background-color: #fff;
             box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
             border-radius: 19px;
-            transition: transform .2s; /* Animation */
+            transition: transform .2s;
+            /* Animation */
         }
 
         .box:hover {
-            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            transform: scale(1.1);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
+
         .load-wrapp:hover {
-            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            transform: scale(1.1);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
+
         .i {
             flex-direction: column;
             width: 17.3%;
@@ -95,7 +100,8 @@
             border-radius: 5px;
             text-align: center;
             /* background-image: linear-gradient(#cad4ec, #56a65b); */
-            transition: transform .2s; /* Animation */
+            transition: transform .2s;
+            /* Animation */
         }
 
         /* 
@@ -197,37 +203,26 @@
             }
         }
 
-        @media only screen and (max-width: 768px) {
-            .responsive {
-                display: block;
-                width: 100%;
-                flex-direction: column;
-                height: 100%;
+        @media only screen and (max-width: 992px) {
+            .d-flex {
+                display: block !important;
             }
         }
-
-        @media only screen and (max-width: 768px) {
-            .iframe {
-                width: 100%;
-                height: 275px;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 992px) {
             .a {
-                width: 70%;
-                height: 50vw;
-                position: relative;
-                top: 50%;
+                transform: translateX(-50%);
                 left: 50%;
-                transform: translate(-50%, -50%);
-                margin-top: 10%;
             }
         }
-
-        @media only screen and (max-width: 768px) {
-            .margin {
-                margin-top: 25%;
+        @media only screen and (max-width: 992px) {
+            .m {
+                margin-top: 7vw;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            .r {
+                width: 100% !important;
+                height: 33% !important;
             }
         }
 
@@ -240,23 +235,6 @@
             justify-content: space-evenly;
             border-radius: 19px;
             width: 100%;
-        }
-
-        .final {
-            background-color: #00439c;
-            width: 100%;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            box-sizing: border-box;
-        }
-
-        .pai {
-            width: 100%;
-            height: 10%;
-            position: fixed;
         }
     </style>
     <script>
@@ -396,34 +374,69 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="js.js"></script>
         </h1>
-        <div class="responsive r">
-            <div class="j responsive">
-                <iframe class="iframe" title="Relatório Financeiro 2023" width="1500" height="850"
+        <div class="row r">
+            <div class="d-flex justify-content-around">
+                <iframe class="w-75 r" title="Relatório Financeiro 2023" width="1500" height="850"
                     src="https://app.powerbi.com/view?r=eyJrIjoiNGJiOTZmN2UtNjQ0My00YWIxLWFlMmUtZmE3YWYxMmZlM2QwIiwidCI6ImNmODQ1NGQzLWUwMTItNGE5ZC05NWIzLTcwYmRiNmY0NTlkNSJ9"
                     frameborder="0" allowFullScreen="true"></iframe>
-                <div class="responsive margin i ">
-                    <div class="box a">
+                <div class="flex-column">
+                    <div class="card a m" style="width: 18rem; height: 31%;">
+                        <div class="card-body lg">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div> <br>
+                    <div class="card a" style="width: 18rem;height: 31%;">
+                        <div class="card-body" lg>
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div><br>
+                    <div class="card a" style="width: 18rem;height: 31%;">
+                        <div class="card-body" lg>
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-2 ">
+                    <div class="w-100 h-25 .bg-dark a">
                         <div style="width: 100%; height: 30%; background-color: #0a2eba;">
                             <i class="fas fa-hand-holding-usd fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
                         </div>
                         <h3 class="center top">São Paulo, Minas e tal representam 60% do total<br> dos saldos</h3>
                     </div>
-                    <div class="box a" style="margin-top: 4%; margin-bottom: 4%;">
+                    <div class="w-100 h-25 .bg-dark a" style="margin-top: 4%; margin-bottom: 4%;">
                         <div style="width: 100%; height: 30%; background-color: #008a3c;">
                             <i class="fa-sharp fa-solid fa-circle-check fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
                         </div>
                         <h3 class="center top">O painel é atualizado toda semana pontualmente na quinta-feira</h3>
                     </div>
-                    <div class="box a">
+                    <div class="w-100 h-25 .bg-dark a">
                         <div style="width: 100%; height: 30%; background-color: #fabf03;">
                             <i class="fas fa-user-check fa-2xl" style="color: #ffffff; left: 50%;
                             transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
                         </div>
                         <h3 class="center top">Dê seu feedback, sobre o painel e o site no link abaixo</h3>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div><br>
         <div class="img" style="display: flex;justify-content: space-around;">
@@ -447,7 +460,7 @@
         <br>
         <!-- <div class="final"> -->
         <!-- <div class="pai"> -->
-        <div style="background-color: #008a3c;height: 4.4vw;text-align: center;top: 5vw;position: relative;">
+        <div style="background-color: #008a3c;height: 4.4vw;text-align: center;top: 5vw;position: relative; display: block;">
             <i class="fas fa-chart-line fa-lg" style="color: white; position: relative; top: 2vw;"></i>
             <p style="color: white;position: relative; top: 2vw; display: inline-block;">© 2023 CGAUX - Coordenação
                 Geral de bolsas Auxílios</p>
