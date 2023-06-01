@@ -22,6 +22,11 @@
     <title>Painel Cgaux</title>
     <link rel="icon" type="image/x-icon" href="./img/favico.png">
     <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
         .top {
             position: relative;
             top: 30%;
@@ -208,17 +213,39 @@
                 display: block !important;
             }
         }
+
+        @media only screen and (max-width: 1366px) {
+            .t {
+                top: 20vw !important;
+                height: 22vh !important;
+            }
+        }
+
         @media only screen and (max-width: 992px) {
             .a {
                 transform: translateX(-50%);
                 left: 50%;
             }
         }
+
+        @media only screen and (max-width: 992px) {
+            .responsivo {
+                display: none;
+            }
+        }
+
         @media only screen and (max-width: 992px) {
             .m {
                 margin-top: 7vw;
             }
         }
+
+        @media only screen and (max-width: 992px) {
+            .h {
+                margin-top: 30vw;
+            }
+        }
+
         @media only screen and (max-width: 992px) {
             .r {
                 width: 100% !important;
@@ -381,19 +408,34 @@
                     frameborder="0" allowFullScreen="true"></iframe>
                 <div class="flex-column">
                     <div class="card a m" style="width: 18rem; height: 31%;">
-                        <div class="card-body lg">
-                            <h5 class="card-title">Card title</h5>
+                        <div style="width: 100%; height: 30%; background-color: #0a2eba; ">
+                            <br>
+                            <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
+                                style="color: #fff;">Card title</h5><br>
+                            <div class="w-100 h-25 position-relative">
+                                <i class="fas fa-hand-holding-usd fa-2xl position-absolute top-0 start-50 translate-middle"
+                                    style="color: #fff; "></i>
+                            </div><br>
+                        </div>
+                        <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                                of the card's content.</p>
                             <a href="#" class="card-link">Card link</a>
                             <a href="#" class="card-link">Another link</a>
                         </div>
                     </div> <br>
                     <div class="card a" style="width: 18rem;height: 31%;">
-                        <div class="card-body" lg>
-                            <h5 class="card-title">Card title</h5>
+                        <div style="width: 100%; height: 30%; background-color: #008a3c; ">
+                            <br>
+                            <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
+                                style="color: #fff;">Card title</h5><br>
+                            <div class="w-100 h-25 position-relative">
+                                <i class="fa-sharp fa-solid fa-circle-check fa-2xl position-absolute top-0 start-50 translate-middle"
+                                    style="color:#FFF ;"></i>
+                            </div><br>
+                        </div>
+                        <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
@@ -403,8 +445,16 @@
                         </div>
                     </div><br>
                     <div class="card a" style="width: 18rem;height: 31%;">
-                        <div class="card-body" lg>
-                            <h5 class="card-title">Card title</h5>
+                        <div style="width: 100%; height: 30%; background-color: #fabf03; ">
+                            <br>
+                            <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
+                                style="color: #fff;">Card title</h5><br>
+                            <div class="w-100 h-25 position-relative">
+                                <i class="fas fa-user-check fa-2xl position-absolute top-0 start-50 translate-middle"
+                                    style="color:#FFF ;"></i>
+                            </div><br>
+                        </div>
+                        <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
@@ -439,44 +489,48 @@
                 </div> -->
             </div>
         </div><br>
-        <div class="img" style="display: flex;justify-content: space-around;">
+        <div class="img d-flex justify-content-around h">
             <img src="./img/1.png" width="200" height="100">
             <img src="./img/2.png" width="110" height="100">
             <img src="./img/3.png" width="120" height="100">
-            <img src="./img/4.png" width="120" height="100">
-            <img src="./img/5.png" width="120" height="100">
-            <img src="./img/6.png" width="200" height="100">
-            <img src="./img/7.png" width="120" height="100">
-            <img src="./img/2.png" width="110" height="100">
-            <img src="./img/3.png" width="120" height="100">
-            <img src="./img/4.png" width="120" height="100">
-            <img src="./img/5.png" width="120" height="100">
-            <img src="./img/1.png" width="200" height="100">
-            <img src="./img/2.png" width="110" height="100">
+            <img class="responsivo" src="./img/4.png" width="120" height="100">
+            <img class="responsivo" src="./img/5.png" width="120" height="100">
+            <img class="responsivo" src="./img/6.png" width="200" height="100">
+            <img class="responsivo" src="./img/7.png" width="120" height="100">
+            <img class="responsivo" src="./img/2.png" width="110" height="100">
+            <img class="responsivo" src="./img/3.png" width="120" height="100">
+            <img class="responsivo" src="./img/4.png" width="120" height="100">
+            <!-- responsivo -->
+            <img class="responsivo" src="./img/5.png" width="120" height="100">
+            <img class="responsivo" src="./img/1.png" width="200" height="100">
+            <img class="responsivo" src="./img/2.png" width="110" height="100">
 
         </div>
         <br>
         <br>
         <br>
         <!-- <div class="final"> -->
-        <!-- <div class="pai"> -->
-        <div style="background-color: #008a3c;height: 4.4vw;text-align: center;top: 5vw;position: relative; display: block;">
-            <i class="fas fa-chart-line fa-lg" style="color: white; position: relative; top: 2vw;"></i>
-            <p style="color: white;position: relative; top: 2vw; display: inline-block;">© 2023 CGAUX - Coordenação
-                Geral de bolsas Auxílios</p>
+        <div class="position-relative w-100" style="height: 8vh;">
+            <div class=" text-center position-relative d-block h-100 w-100 t"
+                style="top: 5vw; background-color: var(--bs-success);">
+                <div class="w-25 h-25 position-absolute top-50 start-50 translate-middle">
+                    <i class="fas fa-chart-line fa-lg" style="color: white;"></i>
+                    <p style="color: white; display: inline-block;">© 2023 CGAUX - Coordenação Geral de bolsas Auxílios
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-    </div>
 
 
+        <!-- </div> -->
 
-    <!-- </div> -->
 
-
-    <br><br><br><br>
-    <!-- <img src="img/barra cgaux.jpg" height="120" width="1900" alt=""> -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script>
+        <br><br><br><br>
+        <!-- <img src="img/barra cgaux.jpg" height="120" width="1900" alt=""> -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- <script>
         const ctx = document.getElementById('state');
 
         new Chart(ctx, {
