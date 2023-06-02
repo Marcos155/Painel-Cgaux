@@ -56,9 +56,11 @@
             transform: scale(1.1);
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
-        .b{
+
+        .b {
             transition: transform .2s;
         }
+
         .b:hover {
             transform: scale(1.1);
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -397,19 +399,29 @@
                 </div>
             </section>
         </div>
-        <br><br>
+        <br><br><br><br><br>
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="js.js"></script>
-        </h1>
+        <div class="w-100 d-flex justify-content-around" style="height: 17vh;">
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded" style="background-color: red; width: 20%;">
+            </div>
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded" style="background-color: #0fcee7; width: 20%;">
+            </div>
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded" style="background-color: #06e978; width: 20%;">
+            </div>
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded" style="background-color: #ff00b3; width: 20%;">
+            </div>
+        </div><br><br>
         <div class="row r">
             <div class="d-flex justify-content-around">
                 <iframe class="w-75 r" title="Relatório Financeiro 2023" width="1500" height="850"
                     src="https://app.powerbi.com/view?r=eyJrIjoiNGJiOTZmN2UtNjQ0My00YWIxLWFlMmUtZmE3YWYxMmZlM2QwIiwidCI6ImNmODQ1NGQzLWUwMTItNGE5ZC05NWIzLTcwYmRiNmY0NTlkNSJ9"
                     frameborder="0" allowFullScreen="true"></iframe>
                 <div class="flex-column">
-                    <div class="card a m b" style="width: 18rem; height: 31%;">
+                    <div class="card a m b shadow p-3 mb-5 bg-body rounded"
+                        style="width: 18rem; height: 31%; padding: 0 !important; margin-bottom: 0 !important;">
                         <div style="width: 100%; height: 30%; background-color: #0a2eba; ">
                             <br>
                             <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
@@ -426,7 +438,8 @@
                             <a href="#" class="card-link">Another link</a>
                         </div>
                     </div> <br>
-                    <div class="card a b" style="width: 18rem;height: 31%;">
+                    <div class="card a b shadow p-3 mb-5 bg-body rounded"
+                        style="width: 18rem;height: 31%; padding: 0 !important; margin-bottom: 0 !important;">
                         <div style="width: 100%; height: 30%; background-color: #008a3c; ">
                             <br>
                             <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
@@ -443,7 +456,8 @@
                             <a href="#" class="card-link">Another link</a>
                         </div>
                     </div><br>
-                    <div class="card a b" style="width: 18rem;height: 31%;">
+                    <div class="card a b shadow p-3 mb-5 bg-body rounded"
+                        style="width: 18rem;height: 31%;padding: 0 !important; margin-bottom: 0 !important;">
                         <div style="width: 100%; height: 30%; background-color: #fabf03; ">
                             <br>
                             <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
