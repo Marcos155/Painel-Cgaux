@@ -66,6 +66,7 @@
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
 
+
         .i {
             flex-direction: column;
             width: 17.3%;
@@ -405,18 +406,50 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="js.js"></script>
         <div class="w-100 d-flex justify-content-around" style="height: 17vh;">
-            <div class="h-100 shadow p-3 mb-5 bg-body rounded b" style="background-color: red; width: 20%;">
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+                style="width: 20%; padding: 0 !important;">
+                <div class="h-100" style="width: 45%;">
+                    <canvas id="pie"></canvas>
+                </div>
+                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                        Informações</h5>
+                </div>
             </div>
-            <div class="h-100 shadow p-3 mb-5 bg-body rounded b" style="background-color: #0fcee7; width: 20%;">
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+                style="width: 20%; padding: 0 !important;">
+                <div class="h-100" style="width: 45%;">
+                    <canvas id="pie"></canvas>
+                </div>
+                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                        Informações</h5>
+                </div>
             </div>
-            <div class="h-100 shadow p-3 mb-5 bg-body rounded b" style="background-color: #06e978; width: 20%;">
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+                style="width: 20%; padding: 0 !important;">
+                <div class="h-100" style="width: 45%;">
+                    <canvas id="pie"></canvas>
+                </div>
+                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                        Informações</h5>
+                </div>
             </div>
-            <div class="h-100 shadow p-3 mb-5 bg-body rounded b" style="background-color: #ff00b3; width: 20%;">
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+                style="width: 20%; padding: 0 !important;">
+                <div class="h-100" style="width: 45%;">
+                    <canvas id="pie"></canvas>
+                </div>
+                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                        Informações</h5>
+                </div>
             </div>
         </div><br>
         <div class="row r">
             <div class="d-flex justify-content-around">
-                <iframe class="w-75 r" title="Relatório Financeiro 2023" width="1500" height="850"
+                <iframe class="w-75 r " title="Relatório Financeiro 2023" width="1500" height="850"
                     src="https://app.powerbi.com/view?r=eyJrIjoiNGJiOTZmN2UtNjQ0My00YWIxLWFlMmUtZmE3YWYxMmZlM2QwIiwidCI6ImNmODQ1NGQzLWUwMTItNGE5ZC05NWIzLTcwYmRiNmY0NTlkNSJ9"
                     frameborder="0" allowFullScreen="true"></iframe>
                 <div class="flex-column">
@@ -426,7 +459,7 @@
                             <br>
                             <h5 class="card-title position-absolute top-0 start-50 translate-middle-x"
                                 style="color: #fff;">Dados</h5><br>
-                            <div class="w-100 h-25 position-relative">
+                            <div class="w-100 h-25 position-relative x">
                                 <i class="fas fa-hand-holding-usd fa-2xl position-absolute top-0 start-50 translate-middle"
                                     style="color: #fff; "></i>
                             </div><br>
@@ -475,29 +508,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-2 ">
-                    <div class="w-100 h-25 .bg-dark a">
-                        <div style="width: 100%; height: 30%; background-color: #0a2eba;">
-                            <i class="fas fa-hand-holding-usd fa-2xl" style="color: #ffffff; left: 50%;
-                            transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
-                        </div>
-                        <h3 class="center top">São Paulo, Minas e tal representam 60% do total<br> dos saldos</h3>
-                    </div>
-                    <div class="w-100 h-25 .bg-dark a" style="margin-top: 4%; margin-bottom: 4%;">
-                        <div style="width: 100%; height: 30%; background-color: #008a3c;">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl" style="color: #ffffff; left: 50%;
-                            transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
-                        </div>
-                        <h3 class="center top">O painel é atualizado toda semana pontualmente na quinta-feira</h3>
-                    </div>
-                    <div class="w-100 h-25 .bg-dark a">
-                        <div style="width: 100%; height: 30%; background-color: #fabf03;">
-                            <i class="fas fa-user-check fa-2xl" style="color: #ffffff; left: 50%;
-                            transform: translate(-50%, -50%); position: relative; margin-top: 10%;"></i>
-                        </div>
-                        <h3 class="center top">Dê seu feedback, sobre o painel e o site no link abaixo</h3>
-                    </div>
-                </div> -->
             </div>
         </div><br>
         <div class="img d-flex justify-content-around h">
@@ -532,46 +542,37 @@
             </div>
 
         </div>
-
-
-
-        <!-- </div> -->
-
-
-        <br><br><br><br>
-        <!-- <img src="img/barra cgaux.jpg" height="120" width="1900" alt=""> -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <!-- <script>
-        const ctx = document.getElementById('state');
+        <script>
+            const ctx = document.getElementById('pie');
 
-        new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Estados', 'Restante estados',],
-                datasets: [{
-                    label: '% dos estados',
-                    data: [12, 19,],
-                    backgroundColor: [
-                        '#0a2eba',
-                        '#fabf03',
-                    ],
-                    borderWidth: 1,
-                    hoverOffset: 4
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        grid: {
-                            drawOnChartArea: false,
-                            display: false,
-                        }
-                    }
-                }
-            }
-        });
-    </script> -->
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['SP', 'BH', 'RJ',],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3,],
+                        borderWidth: 1,
+                        backgroundColor: [
+                            '#fabf03',
+                            '#008a3c',
+                            '#0a2eba',
+                        ],
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                drawBorder: false,
+                            },
+                        }]
+                    },
+                },
+            });
+        </script>
+        </script>
 </body>
 
 </html>
