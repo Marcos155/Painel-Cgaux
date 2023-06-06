@@ -405,11 +405,11 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
         <script src="js.js"></script>
-        <div class="w-100 d-flex justify-content-around" style="height: 17vh;">
+        <div class="w-100 d-flex justify-content-around" style="height: 22vh;">
             <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
                 style="width: 20%; padding: 0 !important;">
                 <div class="h-100" style="width: 45%;">
-                    <canvas id="pie"></canvas>
+                    <canvas id="state"></canvas>
                 </div>
                 <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
                     <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
@@ -419,7 +419,7 @@
             <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
                 style="width: 20%; padding: 0 !important;">
                 <div class="h-100" style="width: 45%;">
-                    <canvas id="pie"></canvas>
+                    <canvas id="saldos"></canvas>
                 </div>
                 <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
                     <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
@@ -428,24 +428,81 @@
             </div>
             <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
                 style="width: 20%; padding: 0 !important;">
-                <div class="h-100" style="width: 45%;">
-                    <canvas id="pie"></canvas>
-                </div>
-                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
-                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
-                        Informações</h5>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active">
+                            <img src="./img/fnde.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block w-100"
+                                style="left: 0; right:0; cursor: pointer;">
+                                <a target="_blank"
+                                    href="https://www.gov.br/fnde/pt-br/assuntos/noticias/pesquisa-sobre-o-novo-fies-busca-aprimorar-os-servicos-do-programa"
+                                    style="text-decoration:none;">
+                                    <h5 class="text-white bg-success w-100">
+                                        Pesquisa sobre o Novo Fies busca aprimorar os serviços do programa</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/fnde2.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block w-100"
+                                style="left: 0; right:0;cursor: pointer;">
+                                <a target="_blank"
+                                    href="https://www.gov.br/fnde/pt-br/assuntos/noticias/inscricoes-abertas-para-capacitacoes-presenciais-sobre-o-pdde-pnate-e-caminho-da-escola"
+                                    style="text-decoration:none;">
+                                    <h5 class="text-white bg-success">Inscrições abertas para capacitações presenciais
+                                        sobre o PDDE, Pnate e Caminho da Escola
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/fnde3.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block w-100"
+                                style="left: 0; right:0;cursor: pointer;">
+                                <a target="_blank"
+                                    href="https://www.gov.br/fnde/pt-br/assuntos/noticias/dia-mundial-do-meio-ambiente-pnae-e-uma-das-formas-de-aliar-cultivo-de-alimentos-e-preservacao-ambiental"
+                                    style="text-decoration:none;">
+                                    <h5 class="text-white bg-success">Dia Mundial do Meio Ambiente: Pnae é uma das
+                                        formas de aliar cultivo de alimentos e preservação ambiental
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+            <!-- <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
                 style="width: 20%; padding: 0 !important;">
                 <div class="h-100" style="width: 45%;">
                     <canvas id="pie"></canvas>
                 </div>
                 <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
-                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x z-3" style="color: #fff;">
                         Informações</h5>
                 </div>
             </div>
+            <div class="h-100 shadow p-3 mb-5 bg-body rounded b d-flex justify-content-around"
+                style="width: 20%; padding: 0 !important;">
+                <div class="h-100 position-relative" style="width: 100%;">
+                    <img src="./img/fnde.jpeg" alt="" style="width: 100%; height: 100%">
+                    <h5 class="bg-secondary w-100 bg-gradient text-white position-absolute bottom-0">
+                        Informações</h5>
+                </div>
+                <div class="h-100" style="width: 55%; background-color:#008a3c; position: relative;">
+                    <h5 class="card-title position-absolute top-0 start-50 translate-middle-x" style="color: #fff;">
+                        Informações</h5>
+                </div>
+            </div> -->
         </div><br>
         <div class="row r">
             <div class="d-flex justify-content-around">
@@ -544,7 +601,7 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
-            const ctx = document.getElementById('pie');
+            const ctx = document.getElementById('state');
 
             new Chart(ctx, {
                 type: 'pie',
@@ -571,8 +628,36 @@
                     },
                 },
             });
+
+            new Chart(
+                document.getElementById('saldos'), {
+                type: 'line',
+                data: {
+                    labels: ['SP'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [20],
+                        borderWidth: 1,
+                        backgroundColor: [
+                            '#fabf03',
+                            '#008a3c',
+                            '#0a2eba',
+                        ],
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                drawBorder: false,
+                            },
+                        }]
+                    },
+                },
+            });
+
         </script>
-        </script>
+
 </body>
 
 </html>
