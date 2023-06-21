@@ -1,32 +1,38 @@
 .clear {
     clear: both;
-  }
-  img {
+}
+
+img {
     max-width: 100%;
     border: 0px;
-  }
-  ul,
-  ol {
+}
+
+ul,
+ol {
     list-style: none;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
     color: inherit;
     outline: none;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
-  }
-  a:focus,
-  a:active,
-  a:visited,
-  a:hover {
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
     text-decoration: none;
     outline: none;
-  }
-  a:hover {
+}
+
+a:hover {
     color: #e73700;
-  }
-  h2 {
+}
+
+h2 {
     margin-bottom: 48px;
     padding-bottom: 16px;
     font-size: 20px;
@@ -34,48 +40,55 @@
     font-weight: 700;
     position: relative;
     text-transform: capitalize;
-  }
-  h3 {
+}
+
+h3 {
     margin: 0 0 10px;
     font-size: 28px;
     line-height: 36px;
-  }
-  /******* Common Element CSS End *********/
-  
-  /* -------- title style ------- */
-  .line-title {
+}
+
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
     position: relative;
     width: 400px;
-  }
-  .line-title::before,
-  .line-title::after {
+}
+
+.line-title::before,
+.line-title::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     height: 4px;
     border-radius: 2px;
-  }
-  .line-title::before {
+}
+
+.line-title::before {
     width: 100%;
     background: #f2f2f2;
-  }
-  .line-title::after {
+}
+
+.line-title::after {
     width: 32px;
     background: #e73700;
-  }
-  
-  /******* Middle section CSS Start ******/
-  /* -------- Landing page ------- */
-  .game-section {
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
     padding: 27px 23px;
-  }
-  .game-section .owl-stage {
+}
+
+.game-section .owl-stage {
     margin: 15px 0;
     display: flex;
     display: -webkit-flex;
-  }
-  .game-section .item {
+}
+
+.game-section .item {
     margin: 0 15px 60px;
     width: 320px;
     height: 400px;
@@ -90,13 +103,15 @@
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     cursor: pointer;
-  }
-  .game-section .item.active {
+}
+
+.game-section .item.active {
     width: 500px;
     box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
-  }
-  .game-section .item:after {
+}
+
+.game-section .item:after {
     content: "";
     display: block;
     position: absolute;
@@ -105,8 +120,9 @@
     left: 0;
     top: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-  }
-  .game-section .item-desc {
+}
+
+.game-section .item-desc {
     padding: 0 24px 12px;
     color: #fff;
     position: relative;
@@ -116,124 +132,291 @@
     -webkit-transform: translateY(calc(100% - 54px));
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
-  }
-  .game-section .item.active .item-desc {
+}
+
+.game-section .item.active .item-desc {
     transform: none;
     -webkit-transform: none;
-  }
-  .game-section .item-desc p {
+}
+
+.game-section .item-desc p {
     opacity: 0;
     -webkit-transform: translateY(32px);
     transform: translateY(32px);
     transition: all 0.4s ease-in-out 0.2s;
     -webkit-transition: all 0.4s ease-in-out 0.2s;
-  }
-  .game-section .item.active .item-desc p {
+}
+
+.game-section .item.active .item-desc p {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-  }
-  .game-section .owl-theme.custom-carousel .owl-dots {
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
     margin-top: -20px;
     position: relative;
     z-index: 5;
-  }
-  /******** Middle section CSS End *******/
-  
-  /***** responsive css Start ******/
-  
-  @media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
     h2 {
-      margin-bottom: 32px;
+        margin-bottom: 32px;
     }
+
     h3 {
-      margin: 0 0 8px;
-      font-size: 24px;
-      line-height: 32px;
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
     }
-  
+
     /* -------- Landing page ------- */
     .game-section {
-      padding: 50px 30px;
+        padding: 50px 30px;
     }
+
     .game-section .item {
-      margin: 0 12px 60px;
-      width: 260px;
-      height: 360px;
+        margin: 0 12px 60px;
+        width: 260px;
+        height: 360px;
     }
+
     .game-section .item.active {
-      width: 400px;
+        width: 400px;
     }
+
     .game-section .item-desc {
-      transform: translateY(calc(100% - 46px));
-      -webkit-transform: translateY(calc(100% - 46px));
+        transform: translateY(calc(100% - 46px));
+        -webkit-transform: translateY(calc(100% - 46px));
     }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
     h2 {
-      margin-bottom: 32px;
+        margin-bottom: 32px;
     }
+
     h3 {
-      margin: 0 0 8px;
-      font-size: 24px;
-      line-height: 32px;
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
     }
+
     .line-title {
-      width: 330px;
+        width: 330px;
     }
-  
+
     /* -------- Landing page ------- */
     .game-section {
-      padding: 50px 30px 40px;
+        padding: 50px 30px 40px;
     }
+
     .game-section .item {
-      margin: 0 12px 60px;
-      width: 240px;
-      height: 330px;
+        margin: 0 12px 60px;
+        width: 240px;
+        height: 330px;
     }
+
     .game-section .item.active {
-      width: 360px;
+        width: 360px;
     }
+
     .game-section .item-desc {
-      transform: translateY(calc(100% - 42px));
-      -webkit-transform: translateY(calc(100% - 42px));
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
     }
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
+
     h2 {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
+
     h3 {
-      margin: 0 0 8px;
-      font-size: 19px;
-      line-height: 24px;
+        margin: 0 0 8px;
+        font-size: 19px;
+        line-height: 24px;
     }
+
     .line-title {
-      width: 250px;
+        width: 250px;
     }
-  
+
     /* -------- Landing page ------- */
     .game-section {
-      padding: 30px 15px 20px;
+        padding: 30px 15px 20px;
     }
+
     .game-section .item {
-      margin: 0 10px 40px;
-      width: 200px;
-      height: 280px;
+        margin: 0 10px 40px;
+        width: 200px;
+        height: 280px;
     }
+
     .game-section .item.active {
-      width: 270px;
-      box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
-      -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        width: 270px;
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     }
+
     .game-section .item-desc {
-      padding: 0 14px 5px;
-      transform: translateY(calc(100% - 42px));
-      -webkit-transform: translateY(calc(100% - 42px));
+        padding: 0 14px 5px;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
     }
-  }
+}
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
