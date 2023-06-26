@@ -118,8 +118,25 @@
 				</div>
 			</section>
 			<section class="main-article">
-				<h4>Relatório em pdf</h4>
-				<li>Arquivo para impressão em pdf sobre os pagamentos da Cotdi do mês de janeiro.
+				<h4 style="text-align: center;">Relatório em pdf</h4><br><br>
+				<p>Selecione o relatorio que desejar e clique em baixar</p>
+				<script type="text/javascript">
+					function download(d) {
+						if (d == 'Select document') return;
+						window.location = 'C:/Users/05711064126/Desktop/Site/' + d;
+					}
+				</script>
+
+				<select class="form-select" aria-label="Default select example" name="download"
+					onChange="download(this.value)">
+					<option selected>Selecione o arquivo</option>
+					<option value="Ebook Cgaux - Programas Suplementares.pdf">Pagamentos da Cotdi do mês de janeiro.</option>
+					<option value="another_file.pdf">Pagamentos da Dipba do mês de janeiro</option>
+					<option value="another_file.pdf">Pagamentos da Dipba do ano de 2023 até o momento</option>
+					<option value="another_file.pdf">Pagamentos da Cotdi do ano de 2023 até o momento</option>
+
+				</select>
+				<!-- <li>Arquivo para impressão em pdf sobre os pagamentos da Cotdi do mês de janeiro.
 					<i class="fas fa-file-download fa-xl" style="color: #ff0000; cursor: pointer;"></i>
 				</li>
 				<li>Arquivo para impressão em pdf sobre os pagamentos da Dipba do mês de janeiro.
@@ -130,7 +147,7 @@
 				</li>
 				<li>Arquivo para impressão em pdf sobre os pagamentos da Cotdi do ano de 2023 até o momento.
 					<i class="fas fa-file-download fa-xl" style="color: #ff0000; cursor: pointer;"></i>
-				</li>
+				</li> --> <br><br><br><br>
 				<div class="gallery">
 					<div class="gallery-mask mask-off">
 						<img class="mask-image" src="" alt="" width="200">
