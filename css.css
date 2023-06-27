@@ -611,7 +611,7 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-    .d-flex {
+    .d {
         display: block !important;
     }
 }
@@ -664,4 +664,16 @@ footer {
     justify-content: space-evenly;
     border-radius: 19px;
     width: 100%;
+}
+.d{
+    display: flex;
+}
+
+@media only screen and (max-width: 992px) {
+    .ç {
+        height: 30vh !important;
+    }
+}
+.w{
+  width: 75%;   
 }
